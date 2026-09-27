@@ -120,7 +120,7 @@ The project helps me build practical experience with **SQL Server, ETL, data war
 The project documentation is available in the `docs/` folder.
 
 * [Data Layers](docs/data_layers.pdf)
-* [Naming Conventions](docs/naming-conventions.md)
+* [Naming Conventions](docs/NamingConventions.md)
 
 ---
 

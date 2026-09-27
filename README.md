@@ -1,90 +1,129 @@
-# sql-data-warehouse-project
-Learning and building a modern Data Warehouse with SQL Server, including EXTRACT-TRANSFORM-LOAD, Data Modelling, and Analytics.
-# Data Warehouse and Analytics Project
+# SQL Data Warehouse & Analytics Project
 
-Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+Welcome to my **SQL Data Warehouse and Analytics Project**!
 
----
-##  Data Architecture
+This project is part of my learning journey in **Data Engineering, SQL, Data Warehousing, ETL, Data Modeling, and Analytics**.
 
-The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
-
-1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
-
----
-## 📖 Project Overview
-
-This project involves:
-
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
-
+The goal of this project is to understand how data from different sources can be loaded into a data warehouse, cleaned and transformed, modeled for analysis, and then used to generate useful business insights.
 
 ---
 
+## Data Architecture
 
-## 🚀 Project Requirements
+This project follows the **Medallion Architecture**, which consists of three layers:
 
-### Building the Data Warehouse (Data Engineering)
+### Bronze Layer
 
-#### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+The Bronze layer stores the **raw data** as it comes from the source systems.
 
-#### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+The data is imported from CSV files into SQL Server.
+
+### Silver Layer
+
+The Silver layer is used for **data cleansing, standardization, and transformation**.
+
+The purpose is to prepare the raw data so it can be used reliably for analysis.
+
+### Gold Layer
+
+The Gold layer contains **business-ready data**.
+
+The data is modeled using fact and dimension tables to support reporting and analytics.
 
 ---
 
-### BI: Analytics & Reporting (Data Analysis)
+## Project Overview
 
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
+This project focuses on the following areas:
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
+1. **Data Architecture**
+   Designing a modern data warehouse using the Bronze, Silver, and Gold layers.
 
+2. **ETL Pipelines**
+   Extracting, transforming, and loading data from the source systems into the data warehouse.
 
-## 📂 Repository Structure
-```
+3. **Data Modeling**
+   Developing fact and dimension tables designed for analytical queries.
+
+4. **Analytics & Reporting**
+   Using SQL to analyze the data and generate insights related to customers, products, and sales.
+
+---
+
+# Project Requirements
+
+## Building the Data Warehouse
+
+### Objective
+
+Develop a modern data warehouse using **SQL Server** to consolidate sales data and support analytical reporting.
+
+### Specifications
+
+* **Data Sources:** Import data from two source systems, ERP and CRM, provided as CSV files.
+* **Data Quality:** Clean and resolve data quality issues before analysis.
+* **Integration:** Combine data from both sources into a single user-friendly data model.
+* **Scope:** Focus on the latest dataset only. Historization is not required.
+* **Documentation:** Document the data model to support understanding and analysis.
+
+---
+
+## BI: Analytics & Reporting
+
+### Objective
+
+Develop SQL-based analytics to provide insights into:
+
+* **Customer Behavior**
+* **Product Performance**
+* **Sales Trends**
+
+The analysis is intended to provide useful business metrics and support decision-making.
+
+---
+
+# Repository Structure
+
+```text
 data-warehouse-project/
 │
-├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
+├── datasets/                           # Raw ERP and CRM datasets
 │
-├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
-│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
+├── docs/                               # Project documentation
+│   ├── data_layers.pdf                 # Data architecture documentation
+│   └── naming-conventions.md           # Naming conventions
 │
 ├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Scripts for extracting and loading raw data
-│   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
+│   ├── bronze/                         # Extracting and loading raw data
+│   ├── silver/                         # Cleaning and transforming data
+│   └── gold/                           # Creating analytical models
 │
-├── tests/                              # Test scripts and quality files
+├── tests/                              # Test scripts and data quality checks
 │
-├── README.md                           # Project overview and instructions
-├── LICENSE                             # License information for the repository
-├── .gitignore                          # Files and directories to be ignored by Git
-└── requirements.txt                    # Dependencies and requirements for the project
+├── README.md                           # Project documentation
+├── LICENSE                             # License information
+└── requirements.txt                    # Project requirements
 ```
+
 ---
 
+## Learning Goal
 
+Through this project, I am learning how the different stages of a data warehouse work together — from **raw data ingestion and transformation to data modeling and analytics**.
 
-## 🛡️ License
+The project helps me build practical experience with **SQL Server, ETL, data warehousing, data modeling, and SQL-based analytics**.
 
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
+---
+
+## Documentation
+
+The project documentation is available in the `docs/` folder.
+
+* [Data Layers](docs/data_layers.pdf)
+* [Naming Conventions](docs/naming-conventions.md)
+
+---
+
+## Connect With Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/vibhorchauhan/)
